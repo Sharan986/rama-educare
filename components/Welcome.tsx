@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Welcome = () => { 
   return (
-    <section className="w-full  bg-[#fffdf7] mt-50 "> 
+    <section className="w-full  mt-50 "> 
       <div className="  grid md:grid-cols-2 gap-10 items-center">
         
         {/* Left Images */}
@@ -47,7 +47,7 @@ const Welcome = () => {
           <p className="text-gray-600 leading-relaxed mb-6 max-w-lg text-lg">
             Helping students achieve their academic dreams with expert guidance.
             From university selection to application success, we make the journey
-            smooth and stress-free. Your future starts here—let's make it happen
+            smooth and stress-free. Your future starts here lets make it happen
             together!
           </p>
 

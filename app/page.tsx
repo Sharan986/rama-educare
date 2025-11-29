@@ -6,7 +6,7 @@ import ServicesSection from '../components/Service'
 import Pattern from '../components/Pattern'
 import FAQsSection from '../components/Faqs'
 import Work from '../components/Work'
-import WhyEdu from '../components/Whyedu'
+
 
 
 const Page = () => {

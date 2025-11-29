@@ -36,7 +36,7 @@ const values: ValueItem[] = [
 
 export default function Values() {
   return (
-    <section className="w-full mt-60  bg-[#fffdf7]">
+    <section className="w-full mt-60  ">
       <div className=" ">
         <h2 className="text-5xl font-medium text-gray-900 text-center">Our Values</h2>
         <p className="text-gray-600 mt-2 mb-12 text-center text-xl">
@@ -48,7 +48,7 @@ export default function Values() {
           {values.map((item, index) => (
             <div
               key={index}
-              className="relative bg-[#fffdf7] border rounded-2xl p-6 h-70 shadow-sm hover:shadow-md transition"
+              className="relative  border rounded-2xl p-6 h-70 shadow-sm hover:shadow-md transition"
             >
               {/* Content */}
               <h3 className="text-2xl font-semibold text-gray-900">{item.title}</h3>
