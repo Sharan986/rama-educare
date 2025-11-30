@@ -17,24 +17,24 @@ const steps: Step[] = [
     id: 1,
     title: "Consulting & Assessment",
     description:
-      "We start with a personalised consultation to understand your goals, background, and preferences.",
+      "We understand your entrance exam results, academic profile, and career goals to create a personalized counseling roadmap.",
   },
   {
     id: 2,
-    title: "Strategy & Preparation",
+    title: "University Selection",
     description:
-      "We develop a clear roadmap with timelines and required steps.",
+      "Based on your results and preferences, we shortlist the best-fit universities and courses across India.",
   },
   {
     id: 3,
-    title: "Application Submission",
-    description: "We help you submit applications correctly and on time.",
+    title: "Application & Documentation",
+    description: "Our team assists with application forms, document compilation, and timely submission to selected universities.",
   },
   {
     id: 4,
-    title: "Final Guidance",
+    title: "Admission & Enrollment",
     description:
-      "Interview prep, offer selection, visa support, pre-arrival help.",
+      "We guide you through counseling rounds, seat allocation, and final enrollment to secure your admission.",
   },
 ];
 
@@ -43,12 +43,12 @@ const steps: Step[] = [
 // ----------------------
 export default function Work() {
   return (
-    <section className="py-20 w-full flex flex-col items-center">
+    <section className="py-20 w-full flex flex-col items-center bg-white">
 
       {/* ---------- HEADER ---------- */}
-      <h2 className="text-5xl font-medium text-center">How we work?</h2>
-      <p className="mt-2 text-gray-500 text-center">
-        Guiding you through every step with clarity and support.
+      <h2 className="text-4xl font-bold text-center text-[#1B4F8C]">How We Work</h2>
+      <p className="mt-4 text-[#64748B] text-center text-lg max-w-2xl">
+        Our streamlined 4-step process to guide you from counseling to admission.
       </p>
 
       {/* ---------- TIMELINE CONTAINER ---------- */}
@@ -61,6 +61,13 @@ export default function Work() {
         {steps.map((step, index) => (
           <WorkStep key={step.id} step={step} index={index} />
         ))}
+      </div>
+
+      {/* ---------- CTA BUTTON ---------- */}
+      <div className="mt-16 text-center">
+        <button className="bg-[#F9A825] hover:bg-[#f5a000] text-white font-semibold px-8 py-4 rounded-lg transition-colors duration-200">
+          Start Your Journey
+        </button>
       </div>
     </section>
   );
@@ -84,8 +91,8 @@ function WorkStep({ step, index }: { step: Step; index: number }) {
   // Determine left or right side
   const isLeft = index % 2 === 1;
 
-  // Different circle colors
-  const circleColors = ["#3b82f6", "#ef4444", "#10b981", "#f59e0b"];
+  // Different circle colors - alternating navy and gold
+  const circleColors = ["#1B4F8C", "#F9A825", "#1B4F8C", "#F9A825"];
 
   // ----------------------
   // SHOW/HIDE ON SCROLL
@@ -134,12 +141,12 @@ function WorkStep({ step, index }: { step: Step; index: number }) {
         }}
         transition={{ duration: 0.9 }}
         className={`
-          w-[420px] p-8 bg-white shadow-lg rounded-xl absolute top-8 ml-15 mr-15 z-10
+          w-[420px] p-8 bg-white border border-[#E2E8F0] shadow-lg rounded-xl absolute top-8 ml-15 mr-15 z-10
           ${isLeft ? "left-[15%]" : "right-[15%]"}
         `}
       >
-        <h3 className="text-xl font-semibold">{step.title}</h3>
-        <p className="mt-2 text-gray-600">{step.description}</p>
+        <h3 className="text-xl font-semibold text-[#1B4F8C]">{step.title}</h3>
+        <p className="mt-2 text-[#64748B]">{step.description}</p>
       </motion.div>
 
     </div>

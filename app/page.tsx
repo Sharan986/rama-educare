@@ -1,12 +1,14 @@
-import Welcome from '@/components/Welcome'
-import Values from '../components/Value'
 import ServicesSection from '../components/Service'
 import Pattern from '../components/Pattern'
 import FAQsSection from '../components/Faqs'
 import Work from '../components/Work'
 import Navbar from '@/components/Navbar'
+import AboutUs from '@/components/AboutUs'
+import WhyChooseUs from '@/components/WhyChooseUs'
 import { CrowdCanvas } from '@/components/ui/skiper-ui/skiper39'
 import Link from 'next/link'
+import EntranceMarquee from '@/components/EntranceMarquee'
+import UniversityMarquee from '@/components/UniversityMarquee'
 
 
 const Page = () => {
@@ -99,14 +101,30 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <div className='px-24'>
-        <Welcome />
-        <Values />
 
-        <ServicesSection />
-        <Work />
+      {/* About Us Section */}
+      <AboutUs />
+
+      {/* Why Choose Us Section */}
+      <WhyChooseUs />
+
+      {/* ENTRANCE EXAMS LOGO MARQUEE */}
+      <EntranceMarquee />
+
+      {/* SERVICES */}
+      <ServicesSection />
+
+      {/* UNIVERSITY MARQUEE */}
+      <UniversityMarquee />
+
+      {/* HOW WE WORK */}
+      <Work />
+      
+      <div className='px-24'>
+
         <Pattern />
         <FAQsSection />
+
 
       </div>
 
