@@ -84,10 +84,10 @@ export default function Contact() {
     `*Message:* ${formData.message || "N/A"}`;
 
   // Your WhatsApp number here (use only digits)
-  const phoneNumber = "919229556207"; // <--- CHANGE TO YOUR NUMBER
+  const phoneNumber = "919031733144"; // <--- CHANGE TO YOUR NUMBER
 
   // Redirect to WhatsApp with message
-  const whatsappURL = `https://wa.me/${+919229556207}?text=${encodeURIComponent(
+  const whatsappURL = `https://wa.me/${+919031733144}?text=${encodeURIComponent(
     message
   )}`;
 
