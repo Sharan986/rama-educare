@@ -12,7 +12,7 @@ const WhyChooseUs = () => {
     {
       title: "15+ Years of Excellence",
       description: "Trusted expertise since 2010, helping 500+ students secure admissions to premier universities across India with personalized guidance and support.",
-      stat: "500+",
+      stat: "5000+",
       label: "Students Guided",
       icon: "EXPERIENCE"
     },
@@ -33,7 +33,7 @@ const WhyChooseUs = () => {
     {
       title: "University Network",
       description: "Recognized partnerships with 50+ top private universities, unlocking guaranteed admission pathways.",
-      stat: "50+",
+      stat: "100+",
       label: "Partner Universities",
       icon: "NETWORK"
     },
